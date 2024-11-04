@@ -1,0 +1,42 @@
+.post {
+    position: relative;
+    overflow: hidden;
+}
+
+.post img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img {
+    border-radius: 0px;
+}
+
+.post:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ensure the overlay has some opacity */
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the content horizontally and vertically */
+}
+
+.overlay-text {
+    display: flex;
+    justify-content: space-between;
+    width: 40%; /* Adjust this as per your design */
+    color: white;
+    font-size: medium;
+    text-align: center;
+}
